@@ -17,7 +17,6 @@ export default function Note({note, setClickedNote,num,onActiveNote, activeNote,
                 <hr />
                 <p>{note.description.length > 30 ? note.description.slice(0,30) + "..." : note.description}</p>
             </div>
-           
         </li>
     )
 }
