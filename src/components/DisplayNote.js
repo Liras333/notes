@@ -12,5 +12,6 @@ export default function DisplayNote({clickedNote}){
             <hr /> 
             {isEdit ? <textarea className="edit">{clickedNote.description}</textarea> : <p>{clickedNote.description }</p>}
         </>
+        
     )
 }
