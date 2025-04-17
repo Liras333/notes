@@ -15,9 +15,10 @@ export default function App(){
     }
 
     function handleDeleteItem(item) {
-        setNotes(notes.filter(el => el.id !== item.id))
+        //confirm(`Do you want to delete ${item.title}? `)
+        setNotes(notes.filter(el => el.id !== item.id));
+        setActiveNote(null)
     }
-   
     
     return (
         <div className="container">

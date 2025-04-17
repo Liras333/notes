@@ -52,10 +52,12 @@ textarea{
 .container{
     display: flex;
     justify-content: center;
-    gap:50px
+    gap:50px;
+    flex-wrap:wrap
 }
 
 .note-description{
+    min-width:300px;
     width:40%;
     height:600px;
     background-color: rgb(231, 218, 200);
@@ -67,4 +69,19 @@ textarea{
 
 .activated{
     background-color: rgb(180, 180, 180);
+
+}
+
+
+.edit-note{
+    text-align: right;
+
+    > span {
+        background-color: rgb(39, 37, 58);
+        padding:10px 20px;
+        padding:5px;
+        color:white;
+        border-radius:5px;
+        cursor: pointer;
+    }
 }
